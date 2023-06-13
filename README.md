@@ -10,7 +10,7 @@ https://blueirissoftware.com/BlueIris.PDF
 
 ## How to use
 ```
-#include "ArduinoBlueIris.h
+#include "ArduinoBlueIris.h"
 
 // replace 192.168.0.69:8080 with your Blue Iris server ip and port... KEEP the /json at the end
 
