@@ -58,6 +58,157 @@ void loop(){
 }
 ```
 
+### BlueIris Class
+```
+//Create a BlueIris client instance called "blueIrisClient"
+
+const char* SSID = "myWifiName";
+const char* SSIDpass = "myWifiPass";
+const char* host = "http://192.168.0.69:8080/json"; //Your BlueIris server IP goes here
+const char* username = "BlueIrisUsername";
+const char* password = "BlueIrisPassword";
+
+BlueIris blueIrisClient(SSID,SSIDpass,host,username,password);
+
+
+```
+### BlueIris Methods
+
+```
+
+blueIrisClient.update();
+
+```
+This updates the Blue Iris client with the latest status of the server and cameras. This needs to be called in loop() so that ArduinoBlueIris can have the correct information. Returns true if successful, returns false if not succesful.
+
+```
+
+blueIrisClient.isConnected();
+
+```
+Returns true if the Blue Iris client is connected to the server.
+
+```
+
+blueIrisClient.isAdmin();
+
+```
+Returns true if user has Admin access to the server. False otherwise.
+
+```
+
+blueIrisClient.canChangeProfile();
+
+```
+Returns true if user has permission change active profile. False otherwise.
+
+```
+
+blueIrisClient.canPTZ();
+
+```
+Returns true if user has permission to send PTZ commands. False otherwise.
+
+```
+
+blueIrisClient.canAudio();
+
+```
+Returns true if user has permission to hear audio. False otherwise.
+
+```
+
+blueIrisClient.canAccessClips();
+
+```
+Returns true if user has permission to access clips. False otherwise.
+
+```
+
+blueIrisClient.canCreateClips();
+
+```
+Returns true if user has permission create clips. False otherwise.
+
+```
+
+blueIrisClient.hasTimeLimit();
+
+```
+Returns true if user has a time limit. False otherwise.
+
+```
+
+blueIrisClient.isDIOEnabled();
+
+```
+Returns true if DIO is enabled on the server. False otherwise.
+
+```
+
+blueIrisClient.getVersion();
+
+```
+Returns the current version of the Blue Iris server as a char*.
+
+
+```
+
+blueIrisClient.getLicense();
+
+```
+Returns the current license of the Blue Iris server as a char*.
+
+```
+
+blueIrisClient.getSupportLevel();
+
+```
+Returns the current support level of the Blue Iris server as a char*.
+
+```
+
+blueIrisClient.getTimeZone();
+
+```
+Returns the current time zone of the Blue Iris server as a char*.
+
+```
+
+blueIrisClient.getStreamList();
+
+```
+Returns the current available streams of the Blue Iris server as an array of char*.
+
+
+```
+
+blueIrisClient.getSoundList();
+
+```
+Returns the current available sounds of the Blue Iris server as an array of char*.
+
+```
+
+blueIrisClient.getWWWSoundList();
+
+```
+Returns the current available sounds in the /WWW folder of the Blue Iris server as an array of char*.
+
+```
+
+blueIrisClient.getProfileList();
+
+```
+Returns the available profiles of the Blue Iris server as an array of char*.
+
+```
+
+blueIrisClient.getScheduleList();
+
+```
+Returns the current schedules of the Blue Iris server as an array of char*.
+
 ## Completed tasks:
  - ✅Login and authenticate MD5 🥳️You do not need to expose your Blue Iris server, disable secure authentication, or create exclusions for the Arduino. The code is able to successfully authenticate through the normal handshake protocal and login to Blue Iris without any changes to the main server settings.
  - ✅Implement "ptz" JSON command to move any Camera in array
