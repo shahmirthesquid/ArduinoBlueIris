@@ -60,11 +60,11 @@ Most major features have been finished, but not pushed to the repo yet as I have
 
 ## Todo:
 
- - ~~Implement "camlist" JSON command to generate abstracted array of type Camera
- - ~~Link camera flags extracted from server's JSON response to each Camera to check isNoSignal, isMotion, isTriggered, isRecording, FPS, etc...
- - ~~Implement a BlueIris.update() method to update status of server and Cameras
- - ~~Implement "trigger" JSON command to activate recording on any Camera in array
- - ~~Implement "ptz" JSON command to move any Camera in array
+ - ~~Implement "camlist" JSON command to generate abstracted array of type Camera~~
+ - ~~Link camera flags extracted from server's JSON response to each Camera to check isNoSignal, isMotion, isTriggered, isRecording, FPS, etc...~~
+ - ~~Implement a BlueIris.update() method to update status of server and Cameras~~
+ - ~~Implement "trigger" JSON command to activate recording on any Camera in array~~
+ - ~~Implement "ptz" JSON command to move any Camera in array~~
  - Implement "logout" JSON command
 
 
