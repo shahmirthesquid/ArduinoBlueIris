@@ -9,6 +9,16 @@ Blue Iris JSON API is documented here:
 https://blueirissoftware.com/BlueIris.PDF
 
 ## How to use
+
+### Dependencies
+ - ArduinoJson V6
+ - HTTPClient
+ - WiFiClient
+ - ESP8266 MD5
+
+All dependencies are #included in the ArduinoBlueIris.h file
+
+### Examples
 ```
 #include "ArduinoBlueIris.h"
 
