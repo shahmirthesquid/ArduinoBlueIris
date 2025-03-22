@@ -1,4 +1,7 @@
 # ArduinoBlueIris
+
+### NOTE: I will not be releasing any more source code for this library. The software library is fully complete and working. However, I don't think its a good idea to expose security vulnerabilities of the security software I personally use, right onto the open net. If you are smart you can use use what I've already posted to get past the toughest aspects of reverse engineering the BlueIris API and find these vulnerabilities yourself.
+
 Arduino API to integrate with Blue Iris Security Software JSON API
 
 Not all functionality of the JSON API can be implemented onto the Arduino due to hardware limitations
