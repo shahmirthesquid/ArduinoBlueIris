@@ -10,11 +10,11 @@
 #include <ArduinoJson.h>
 #include <md5.h>
 
-const char* wifiName = "Khan - 2G";
-const char* wifiPass = "fatima2005";
+const char* wifiName = "bruh";
+const char* wifiPass = "bruhhh";
 
 //Web Server address to read/write from 
-const char *host = "http://192.168.0.210:8080/json";//"http://arduinojson.org/example.json";
+const char *host = "http://192.168.0.69:8080/json";//"http://arduinojson.org/example.json";
 
 MD5Builder _md5;
 
